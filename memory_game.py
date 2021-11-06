@@ -83,7 +83,7 @@ def user_loses():
     game_over_lives_descriptor_label = Label(root, text='LIVES', bg="#151326", fg="#999999", font=("Helvetica", 20, "bold"))
     game_over_lives_descriptor_label.place(x=1165, y=450, anchor=CENTER)
 
-    play_again_button_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/play_again.png")
+    play_again_button_image = PhotoImage(file="MemoryGame/play_again.png")
     play_again_button = Button(root, image=play_again_button_image, highlightbackground="#151326", padx=0, pady=0, command=new_game_selected)
     play_again_button.place(x=720, y=700, anchor=CENTER)
 
@@ -7337,7 +7337,7 @@ def start_new_game():
     probability_of_repeat = 50
     starting_lives = lives
 
-    title_banner_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/title_banner.png")
+    title_banner_image = PhotoImage(file="MemoryGame/title_banner.png")
     title_banner_label = Label(root, image=title_banner_image, bg="#151326")
     title_banner_label.pack()
     title_banner_label.place(x=720, y=60, anchor=CENTER)
@@ -7358,15 +7358,15 @@ def start_new_game():
     current_word_label = Label(root, text=current_word.upper(), bg="#151326", fg="#00a5ec", font=("Helvetica", 125, "bold"))
     current_word_label.place(x=720, y=425, anchor=CENTER)
 
-    incorrect_seen_button_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/seen_incorrect.png")
-    correct_seen_button_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/seen_correct.png")
-    seen_button_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/seen.png")
+    incorrect_seen_button_image = PhotoImage(file="MemoryGame/seen_incorrect.png")
+    correct_seen_button_image = PhotoImage(file="MemoryGame/seen_correct.png")
+    seen_button_image = PhotoImage(file="MemoryGame/seen.png")
     seen_button = Button(root, image=seen_button_image, highlightbackground="#151326", padx=0, pady=0, command=lambda: user_guessed('Seen'))
     seen_button.place(x=470, y=700, anchor=CENTER)
 
-    incorrect_not_seen_button_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/not_seen_incorrect.png")
-    correct_not_seen_button_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/not_seen_correct.png")
-    not_seen_button_image = PhotoImage(file="Desktop/Miscellaneous/Python Images/MemoryGame/not_seen.png")
+    incorrect_not_seen_button_image = PhotoImage(file="MemoryGame/not_seen_incorrect.png")
+    correct_not_seen_button_image = PhotoImage(file="MemoryGame/not_seen_correct.png")
+    not_seen_button_image = PhotoImage(file="MemoryGame/not_seen.png")
     not_seen_button = Button(root, image=not_seen_button_image, highlightbackground="#151326", padx=0, pady=0, command=lambda: user_guessed('Not seen'))
     not_seen_button.place(x=970, y=700, anchor=CENTER)
 
