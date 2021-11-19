@@ -7332,7 +7332,7 @@ def start_new_game():
 "zulu","zulus"]
 
     seen_word_list = []
-    lives = 1
+    lives = 3
     score = 0
     probability_of_repeat = 50
     starting_lives = lives
